@@ -40,11 +40,9 @@ a img {
 
 footer {
   position: fixed;
-  padding-top: 10px;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 40px;
   margin: auto;
   background-color: #5f521575;
   text-align: center;

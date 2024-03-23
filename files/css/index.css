@@ -24,7 +24,9 @@ body {
 }
 
 .main-content p {
+  text-align: center;
   margin: 0 0 0 0;
+  font-size: 22px;
 }
 
 .main-content .content-item {
@@ -34,6 +36,22 @@ body {
 .main-content .content-item img {
   width: 100%;
 }
+
+.main-content .cool-fact {
+  margin: auto;
+  margin-top: 20px;
+  border: black 2px solid;
+  border-radius: 15px;
+  background-color: #b3980fcb;
+  padding: 10px;
+  width: fit-content;
+}
+
+.main-content .cool-fact h3 {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
 a img {
   cursor: pointer;
 }

@@ -15,6 +15,7 @@
   <link rel="icon" type="image/x-icon" href="files/img/ico/grain.png">
   <link rel="stylesheet" href="files/css/index.css">
   <script type="text/javascript" src='files/js/index.js'></script>
+  <script type="text/javascript" src='files/js/badges.js'></script>
 </head>
 
 <header>
@@ -64,6 +65,19 @@
       <p>linux was created by linus torvalds in 1935</p>
       <br>
       <p style="font-style:italic;">for the record none of this is true</p>
+    </div>
+    <hr>
+
+    <div class="content-item badges">
+      <script>
+        // for every badge in the badges array, create a badge element
+        badges.forEach(badge => {
+          let badgeElement = document.createElement('img');
+          badgeElement.src = badge;
+          badgeElement.style.width = '88px';
+          document.querySelector('.badges').appendChild(badgeElement);
+        });
+      </script>
     </div>
   </div>
 </body>

@@ -22,6 +22,10 @@ body {
   margin: 0 0 0 0;
 }
 
+a img {
+  cursor: pointer;
+}
+
 footer {
   position: fixed;
   left: 0;

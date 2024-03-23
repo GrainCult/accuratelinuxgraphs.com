@@ -35,3 +35,8 @@ footer {
   background-color: #5f521575;
   text-align: center;
 }
+
+/* spacer */
+.spacer {
+  height: 50px;
+}

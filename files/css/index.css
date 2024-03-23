@@ -1,0 +1,33 @@
+body {
+  background-color: #544b20;
+  /* background-image: url('../img/wheat_field.jpg'); */
+  /* background-size: 100% auto; */
+  background: url('../img/wheat_field.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+  margin: auto;
+  width: fit-content;
+  height: fit-content
+}
+
+.main-content p {
+  margin: 0 0 0 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  background-color: #5f521575;
+  text-align: center;
+}

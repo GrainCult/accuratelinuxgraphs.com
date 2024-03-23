@@ -1,3 +1,7 @@
+header {
+  color: #6b5c14;
+}
+
 body {
   background-color: #544b20;
   /* background-image: url('../img/wheat_field.jpg'); */
@@ -14,29 +18,34 @@ body {
 
 .main-content {
   margin: auto;
-  width: fit-content;
-  height: fit-content
+  width: 50vw;
+  height: fit-content;
+  margin-bottom: 200px;
 }
 
 .main-content p {
   margin: 0 0 0 0;
 }
 
+.main-content .content-item {
+  background-color: #5f521575;
+}
+
+.main-content .content-item img {
+  width: 100%;
+}
 a img {
   cursor: pointer;
 }
 
 footer {
   position: fixed;
+  padding-top: 10px;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 40px;
   margin: auto;
   background-color: #5f521575;
   text-align: center;
-}
-
-/* spacer */
-.spacer {
-  height: 50px;
 }

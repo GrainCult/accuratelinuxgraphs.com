@@ -77,8 +77,19 @@ body {
   background-color: #5f521575;
 }
 
-.main-content .content-item img {
-  width: 100%;
+.main-content .content-item .graph-img {
+  width: 95%;
+  border-style: ridge;
+  border-width: 10px;
+  border-color: hotpink;
+}
+
+.main-content .graph .graph-download-button {
+  width: 20vw;
+}
+
+.main-content .graph .graph-download-button img {
+  width: inherit;
 }
 
 .main-content .cool-fact {

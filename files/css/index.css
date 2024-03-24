@@ -61,6 +61,17 @@ body {
   }
 }
 
+@keyframes margin-move {
+  0% {
+    margin-left: -60%;
+    border: 5px #42a213 solid;
+  }
+  100% {
+    margin-left: 60%;
+    border: 10px #b923ad solid;
+  }
+}
+
 .main-content {
   margin: auto;
   width: 50vw;
@@ -86,6 +97,18 @@ body {
 
 .main-content .graph .graph-download-button {
   width: 20vw;
+}
+
+.main-content .graph .graph-download-button img {
+  width: 20vw;
+  animation: margin-move 2.5s infinite linear;
+  animation-direction: alternate;
+}
+
+
+.main-content .graph .graph-download-button:hover {
+  animation: margin-move 2.5s infinite linear;
+  animation-direction: alternate-reverse;
 }
 
 .main-content .graph .graph-download-button img {

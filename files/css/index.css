@@ -47,13 +47,13 @@ body {
 
 .main-content .graph .graph-download-button img {
   width: 20vw;
-  animation: margin-move 2.5s infinite linear;
+  animation: download-button-swag 2s infinite cubic-bezier(.79,.14,.15,.86);
   animation-direction: alternate;
 }
 
 
 .main-content .graph .graph-download-button:hover {
-  animation: margin-move 2.5s infinite linear;
+  animation: download-button-swag 0.5s infinite linear;
   animation-direction: alternate-reverse;
 }
 

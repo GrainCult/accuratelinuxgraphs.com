@@ -43,13 +43,32 @@
   }
 }
 
-@keyframes margin-move {
+@keyframes download-button-swag {
   0% {
+    transform: scaleX(1) scaleY(1) rotate(0deg);
     margin-left: -60%;
-    border: 5px #42a213 solid;
+    border: 2px red solid;
+  }
+  10% {
+    transform: scaleX(0.4) scaleY(0.4);
+    border-color: orange;
+  }
+  20% {
+    border-color: yellow;
+  }
+  30% {
+    border-color: green;
+  }
+  40% {
+    border-color: blue;
+  }
+  50% {
+    transform: scaleX(1.4) scaleY(1.25);
+    border-color: indigo;
   }
   100% {
-    margin-left: 60%;
-    border: 10px #b923ad solid;
+    transform: scaleX(1) scaleY(1) rotate(720deg);
+    margin-left: 40%;
+    border: 10px violet solid;
   }
 }

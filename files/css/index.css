@@ -10,7 +10,7 @@ body {
   background-size: 100px;
   background-repeat: repeat;
   background-attachment: fixed;
-  animation: move 10s infinite linear;
+  animation: move 2.5s infinite linear;
   color: white;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,10 +18,46 @@ body {
 
 @keyframes move {
   0% {
-    background-position: 0px 0px;
+    background-position: 25px -25px;
+  }
+  10% {
+    background-position: -250px 250px;
+  }
+  20% {
+    background-position: -70px 180px;
+  }
+  30% {
+    background-position: 35px 12px;
+  }
+  40% {
+    background-position: -40px 500px;
+  }
+  50% {
+    background-position: 140px -300px;
+  }
+  60% {
+    background-position: -180px 20px;
+  }
+  70% {
+    background-position: 20px 435px;
+  }
+  80% {
+    background-position: 100px -250px;
+  }
+  90% {
+    background-position: 250px 150px;
+  }
+  95% {
+    background-position: 50px 50px;
+  }
+  98% {
+    background-position: -25px 25px;
+  }
+  99% {
+    background-position: 5px -5px;
   }
   100% {
-    background-position: 2500px 2500px;
+    background-position: 1px 1px;
   }
 }
 
@@ -41,8 +77,19 @@ body {
   background-color: #5f521575;
 }
 
-.main-content .content-item img {
-  width: 100%;
+.main-content .content-item .graph-img {
+  width: 95%;
+  border-style: ridge;
+  border-width: 10px;
+  border-color: hotpink;
+}
+
+.main-content .graph .graph-download-button {
+  width: 20vw;
+}
+
+.main-content .graph .graph-download-button img {
+  width: inherit;
 }
 
 .main-content .cool-fact {

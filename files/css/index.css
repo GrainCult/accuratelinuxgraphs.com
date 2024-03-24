@@ -4,16 +4,25 @@ header {
 
 body {
   background-color: #544b20;
-  /* background-image: url('../img/wheat_field.jpg'); */
-  /* background-size: 100% auto; */
-  background: url('../img/wheat_field.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  /* add files/img/tux.gif as a repeating background image at size 100px */
+  /* it will also slowly move to the bottom right infinitely linearly */
+  background-image: url('../img/tux.gif');
+  background-size: 100px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  animation: move 10s infinite linear;
   color: white;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 2500px 2500px;
+  }
 }
 
 .main-content {

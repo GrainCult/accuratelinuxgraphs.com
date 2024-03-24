@@ -41,6 +41,13 @@ body {
   border-color: hotpink;
 }
 
+.main-content .content-item .graph-img:hover {
+  border-color: #e5e100;
+  animation: vibrate 0.4s infinite linear;
+  animation-direction: alternate;
+}
+
+
 .main-content .graph .graph-download-button {
   width: 20vw;
 }
@@ -74,6 +81,14 @@ body {
 .main-content .cool-fact h3 {
   margin: 0;
   margin-bottom: 6px;
+}
+
+.main-content .badges {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: widen 3s infinite cubic-bezier(1,0,0,1);
+  animation-direction: alternate-reverse;
 }
 
 a img {

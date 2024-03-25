@@ -86,12 +86,7 @@ body {
 }
 
 .main-content .badges {
-  position: absolute;
   max-width: 100vw;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: widen 3s infinite cubic-bezier(1,0,0,1);
-  animation-direction: alternate-reverse;
 }
 
 a img {

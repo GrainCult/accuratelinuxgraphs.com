@@ -462,7 +462,6 @@ const badges = [
     "files/img/badges/espn.gif",
     "files/img/badges/etsmall.gif",
     "files/img/badges/everest.gif",
-    "files/img/badges/exploiter.gif",
     "files/img/badges/falcom.gif",
     "files/img/badges/fdbutton.gif",
     "files/img/badges/fgbut18.gif",

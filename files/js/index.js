@@ -15,3 +15,10 @@ function forceDownload(url, fileName){
   }
   xhr.send();
 }
+
+function stopAnimations() {
+  var animations = document.querySelectorAll('*');
+  for (var i = 0; i < animations.length; i++) {
+    animations[i].style.animation = "none";
+  }
+}

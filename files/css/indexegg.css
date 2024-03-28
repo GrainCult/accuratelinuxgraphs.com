@@ -1,7 +1,17 @@
-@import url('anim.css');
+@import url('animegg.css');
 
 header {
-  color: #6b5c14;
+  animation: flash 0.5s infinite step-end;
+}
+
+/* flash animation */
+@keyframes flash {
+  0% {
+    color: #6b5c14;
+  }
+  50% {
+    color: #e5e100;
+  }
 }
 
 body {

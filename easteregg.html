@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="description" content="your #1 source for accurate linux graphs">
+    <meta name="keywords" content="accurate,linux,graphs">
+    <meta property="og:site_name" content="accuratelinuxgraphs.com">
+    <meta property="og:title" content="accuratelinuxgraphs.com">
+    <meta property="og:description" content="your #1 source for accurate linux graphs">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://accuratelinuxgraphs.com/">
+    <meta property="og:image" content="https://accuratelinuxgraphs.com/files/img/ico/grain.png">
+    <meta name="robots" content="noindex">
+    <title>easter egg</title>
+    <link rel="icon" type="image/x-icon" href="files/img/ico/grain.png">
+    <link rel="stylesheet" href="files/css/indexegg.css">
+    <script type="text/javascript" src='files/js/easteregg.js'></script>
+    <script type="text/javascript" src='files/js/badges.js'></script>
+    <body onload="resetRadio()">
+</head>
+
+<header>
+    <h1>EASTER EGG!</h1>
+</header>
+
+<body>
+    <div class="main-content">
+        <p>HAVE SOME TRIVIA!!!</p>
+        <div class="content-item graph">
+            <h2>When was Linux created?</h2>
+            <input type="radio" name="linux" value="0" checked style="display:none">
+            <input type="radio" name="linux" value="1935"> 1935<br>
+            <input type="radio" name="linux" value="1991"> 1991<br>
+            <input type="radio" name="linux" value="1985"> 1985<br>
+            <input type="radio" name="linux" value="2001"> 2001<br>
+            <button onclick="checkLinux()">Submit</button>
+            <p id="linux-answer"></p>
+        </div>
+        <hr>
+
+        <div class="content-item graph">
+            <h2>What is the name of the first Linux kernel?</h2>
+            <input type="radio" name="kernel" value="0" checked style="display:none">
+            <input type="radio" name="kernel" value="Linux 1"> Linux 1<br>
+            <input type="radio" name="kernel" value="Linux 0.1.0"> Linux 0.1.0<br>
+            <input type="radio" name="kernel" value="Linux 0.0.1"> Linux 0.0.1<br>
+            <input type="radio" name="kernel" value="Linux 0.01"> Linux 0.01<br>
+            <button onclick="checkKernel()">Submit</button>
+            <p id="kernel-answer"></p>
+        </div>
+        <hr>
+
+        <div class="content-item graph">
+            <h2>How many badges are there on the main page?</h2>
+            <input type="radio" name="badges" value="0" checked style="display:none">
+            <input type="radio" name="badges" value="incorrect"> 593<br>
+            <input type="radio" name="badges" value="incorrect"> 982<br>
+            <input type="radio" name="badges" value="correct"> 123<br>
+            <input type="radio" name="badges" value="incorrect"> 583<br>
+            <script>
+                var count = badges.length;
+                var radios = document.getElementsByName('badges');
+                for (var i = 0; i < radios.length; i++) {
+                    if (radios[i].value == 'correct') {
+                        radios[i].nextSibling.nodeValue = ' ' + count;
+                    }
+                }
+            </script>
+            <button onclick="checkBadges()">Submit</button>
+            <p id="badges-answer"></p>
+        </div>
+        <hr>
+
+        <div class="content-item graph">
+            <h2>Check all answers</h2>
+            <button onclick="getAnswers()">Submit</button>
+            <p id="answers"></p>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>

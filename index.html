@@ -115,7 +115,20 @@
           let badgeElement = document.createElement('img');
           badgeElement.src = badge;
           badgeElement.style.width = '88px';
+          badgeElement.style.height = '31px';
           document.querySelector('.badges').appendChild(badgeElement);
+
+          // if we are on the 142th badge, add a easter egg badge (files/img/easteregg.png)
+          // when clicked go to easteregg.html
+          // also make it so we can style it with css using the class 'easteregg'
+          if (badges.indexOf(badge) == 142) {
+            badgeElement.src = 'files/img/easteregg.png';
+            badgeElement.classList.add('easteregg');
+            badgeElement.onclick = () => {
+              window.location.href = 'easteregg.html';
+            };
+            
+          }
         });
       </script>
     </div>

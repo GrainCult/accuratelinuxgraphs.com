@@ -22,3 +22,15 @@ function stopAnimations() {
     animations[i].style.animation = "none";
   }
 }
+
+function h() {
+  // find element with class "torvalds"
+  var torvalds = document.querySelector('.torvalds');
+
+  // replace the image with files/img/rickroll.gif
+  torvalds.src = "files/img/rickroll.gif";
+
+  // play the audio file files/h.mp3
+  let h = new Audio('files/h.mp3');
+  h.play();
+}

@@ -34,3 +34,17 @@ function h() {
   let h = new Audio('files/h.mp3');
   h.play();
 }
+
+function h2() {
+  // find all images
+  var images = document.querySelectorAll('img');
+
+  // replace all images with files/img/rickroll.gif
+  for (var i = 0; i < images.length; i++) {
+    images[i].src = "files/img/rickroll.gif";
+  }
+
+  // play the audio file files/h.mp3
+  let h = new Audio('files/h.mp3');
+  h.play();
+}

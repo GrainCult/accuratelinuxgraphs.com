@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fizzbuzz Generator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='description' content='the totally speedy way to get a job' />
+    <meta name='keywords' content='fizzbuzz, fizzbuzz generator, fizzbuzz test, fizzbuzz interview question' />
+    <link rel='stylesheet' type='text/css' media='screen' href='files/css/fizzbuzz.css'>
+    <script src='files/js/fizzbuzz.js'></script>
+</head>
+
+<header>
+    <h1>Fizzbuzz Generator</h1>
+</header>
+
+<body>
+    <div class="main-content content-item graph">
+        <p>How many numbers would you like to generate?</p>
+        <input type='number' id='number' />
+        <p>What language?</p>
+        <select id='language'>
+            <option value='python'>Python</option>
+            <option value='rust'>Rust</option>
+            <option value='nope'>There are no other languages. Good luck with your job search.</option>
+        </select>
+        <button onclick='generateFizzbuzz()'>Generate</button>
+        <button onclick='downloadFizzbuzz()'>Download</button>
+        <p id='codeBlock' class='code'>Code will appear here (formatting is broken but whatever, download is fine)</p>
+    </div>
+</body>
+</html>

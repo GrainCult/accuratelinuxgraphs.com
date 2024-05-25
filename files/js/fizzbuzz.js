@@ -26,7 +26,7 @@ function generateFizzbuzz() {
         fizzbuzzString = fizzbuzzArray.map((element) => `print('${element}')`).join('\n');
     }
     else if (language === 'rust') {
-        fizzbuzzString = `fn main() {\n${fizzbuzzArray.map((element) => `    println!('${element}');`).join('\n')}\n}`;
+        fizzbuzzString = `fn main() {\n${fizzbuzzArray.map((element) => `    println!("${element}");`).join('\n')}\n}`;
     }
     else {
         fizzbuzzString = "why";

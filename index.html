@@ -15,7 +15,6 @@
   <link rel="icon" type="image/x-icon" href="files/img/ico/grain.png">
   <link rel="stylesheet" href="files/css/index.css">
   <script type="text/javascript" src='files/js/index.js'></script>
-  <script type="text/javascript" src='files/js/badges.js'></script>
 </head>
 
 <header>
@@ -277,35 +276,6 @@
     
     <div class="content-item graph">
       <a class="graph-download-button" onclick='h2()'><img src="files/img/download.png"></a>
-    </div>
-    
-    <p><i>some things dont work? clear your cache and refresh with ctrl+f5<br>
-these badges were just grabbed from the internet, if you find any offensive or copyrighted badges please open a issue on the <a href="https://github.com/GrainCult/accuratelinuxgraphs.com">github</a><br>
-    </i></p>
-
-    <div class="content-item badges">
-      <script>
-        // for every badge in the badges array, create a badge element
-        badges.forEach(badge => {
-          let badgeElement = document.createElement('img');
-          badgeElement.src = badge;
-          badgeElement.style.width = '88px';
-          badgeElement.style.height = '31px';
-          document.querySelector('.badges').appendChild(badgeElement);
-
-          // if we are on the 142th badge, add a easter egg badge (files/img/easteregg.png)
-          // when clicked go to easteregg.html
-          // also make it so we can style it with css using the class 'easteregg'
-          if (badges.indexOf(badge) == 142) {
-            badgeElement.src = 'files/img/easteregg.png';
-            badgeElement.classList.add('easteregg');
-            badgeElement.onclick = () => {
-              window.location.href = 'easteregg.html';
-            };
-            
-          }
-        });
-      </script>
     </div>
 
     <button onclick="stopAnimations()">stop animations</button>

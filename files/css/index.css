@@ -5,6 +5,10 @@ header a {
   text-decoration: wavy underline;
 }
 
+header p {
+  margin: 0;
+}
+
 body {
   background-color: #544b20;
   /* add files/img/tux.gif as a repeating background image at size 100px */
@@ -96,12 +100,26 @@ a img {
 
 footer {
   position: fixed;
+  display: flex;
+  justify-content: center;
   left: 0;
   bottom: 0;
   width: 100%;
   margin: auto;
   background-color: #5f521575;
   text-align: center;
+}
+
+header #site-icon {
+  width: 275px;
+  height: 70px;
+}
+
+footer #site-icon {
+  width: 200px;
+  margin-top: 9px;
+  width: 30px;
+  height: 30px;
 }
 
 /* add vibrate animation to the easteregg class */
